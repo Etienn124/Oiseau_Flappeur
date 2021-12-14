@@ -10,17 +10,18 @@ public class UImanager : MonoBehaviour
     private void Start()
     {
         gameOverPanel.gameObject.SetActive(false);
-        newGamePanel.gameObject.SetActive(true);
+        newGamePanel.gameObject.SetActive(false);
     }
 
     public void RelaunchObject()
     {
         gameOverPanel.gameObject.SetActive(false);
-        newGamePanel.gameObject.SetActive(true);
+        newGamePanel.gameObject.SetActive(false);
     }
 
     public void triggerGameOver()
     {
         gameOverPanel.gameObject.SetActive(true);
+
     }
 }

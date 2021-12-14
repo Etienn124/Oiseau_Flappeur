@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
         UImanager _UI = FindObjectOfType<UImanager>();
 
 
+
         //on va relancer tout les checkpoints
         foreach (checkpoint item in _checkpoints)
         {
@@ -28,7 +29,7 @@ public class GameManager : MonoBehaviour
         _player.RelaunchObject();
         _player.gameObject.SetActive(true);
 
-        //on désactive l'écran de game over
+        //on dï¿½sactive l'ï¿½cran de game over
         _UI.RelaunchObject();
 
 

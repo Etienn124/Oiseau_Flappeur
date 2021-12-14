@@ -11,13 +11,6 @@ public class checkpoint : MonoBehaviour
     {
         initialposition = transform.position;
     }
-    private void OnTriggerEnter2D(Collider2D p_collision)
-    {
-        if (GetComponent<Player>() != null)
-        {
-            FindObjectOfType<Score>().addScore();
-        }
-    }
     void Update()
     {
         transform.position -= Vector3.right * Speed;

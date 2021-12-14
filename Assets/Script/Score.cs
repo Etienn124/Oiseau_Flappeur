@@ -5,11 +5,15 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    public int myScore;
+    public static int myScore = 0;
     
-    public void addScore()
+    private void Start()
     {
-        myScore++;
-        GetComponent<TextMeshProUGUI>().text = myScore.ToString();
+        myScore = 0;
+    }
+
+    public void Update()
+    {
+        GetComponent<UnityEngine.UI.Text>().text = myScore.ToString();
     }
 }
